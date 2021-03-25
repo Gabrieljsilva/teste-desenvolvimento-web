@@ -50,7 +50,7 @@ To run the existing migrations in the project, run the following command:
 ```bash
 npm run typeorm migration:run
  ```
-Você poderá desfazer uma a uma as migrations executadas com o seguinte comando:
+You can undo the migrations performed one by one with the following command:
 ```bash
 npm run typeorm migration:revert
  ```
@@ -93,8 +93,6 @@ sudo docker-compose up
 
 This should ensure adequate permissions to run the application.
 
-All versions must be sent to the docker hub, to do this, execute the following command:
-
 ### Comments
 It is recommended to use docker-compose only in development environments.
 
@@ -104,7 +102,7 @@ When running the project with the docker-compose you must change some environmen
 DB_HOST=postgresdb
 ```
 
-The migrations and seeders must be executed through the container terminal, because the environment variables are declared in the context of the containers and our host machine does not have explicit access to them. To access the container we need to follow the following steps:
+The migrations must be executed through the container terminal, because the environment variables are declared in the context of the containers and our host machine does not have explicit access to them. To access the container we need to follow the following steps:
 
 #### List active containers
 After uploading the container with docker-compose, we can list all active containers with the following command:
