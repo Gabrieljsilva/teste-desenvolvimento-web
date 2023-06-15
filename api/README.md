@@ -1,4 +1,4 @@
-# Pokedesc 
+# Pokedex
 Pokedesc is a project to keep Pokemons data. This project is being built using Nodejs, Typescript and Nestjs.
 
 # Settings
